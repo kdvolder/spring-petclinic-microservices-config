@@ -1,4 +1,7 @@
-﻿spring:
+kris:
+  test: something
+---
+spring:
   profiles: default
 eureka:
   instance:
