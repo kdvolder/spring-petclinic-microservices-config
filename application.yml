@@ -1,5 +1,13 @@
 # COMMON APPLICATION PROPERTIES
 
+eureka:
+  instance:
+    # enable to register multiple app instances with a random server port
+    instance-id: ${spring.application.name}:${random.uuid}
+  client:
+    serviceUrl:
+      defaultZone: http://spring-petclinic-discovery-server:8080/eureka/
+
 server:
   # The stop processing uses a timeout which provides a grace period during which existing requests will be allowed to complete but no new requests will be permitted
   shutdown: graceful
