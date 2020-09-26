@@ -2,8 +2,6 @@
   port: 8080
 
 eureka:
-  instance:
-    hostname: localhost
   # standalone mode
   client:
     registerWithEureka: false
